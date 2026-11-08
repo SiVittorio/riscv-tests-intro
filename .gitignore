@@ -2,4 +2,3 @@
 **/*.vstf
 **/*.vcd
 **/out/
-**/build
