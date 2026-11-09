@@ -2077,7 +2077,7 @@ verilator -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -Wno-UNUSEDSIGNAL -Wno-UNUSEDPARAM \
 ../../../submodules/MIRISCV/miriscv/rtl/include/*.sv ../../../submodules/MIRISCV/miriscv/rtl/*.sv \
 ../tb/miriscv_test_pkg.sv ../tb/miriscv_mem_intf.sv  ../../../submodules/ibex/rtl/ibex_pkg.sv \
 ../../../submodules/ibex/rtl/ibex_tracer_pkg.sv ../../../submodules/ibex/rtl/ibex_tracer.sv  \
-../tb/miriscv_tracing.sv ../tb/miriscv_tb_top.sv  +incdir+../tb/ +define+BOOT_ADDR=2147483648 \
+../tb/miriscv_tracing.sv ../tb/miriscv_tb_top.sv  +incdir+../tb/ +define+**BOOT_ADDR**=2147483648 \
 	--trace --trace-params --trace-structs --x-assign 0 -top-module miriscv_tb_top \
   -Mdir out/verilator &> out/verilator/compile.log
 ```
